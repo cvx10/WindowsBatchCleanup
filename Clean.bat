@@ -5,9 +5,9 @@ md %windir%\temp
 del /s /f /q %windir%\Prefetch*.*
 rd /s /q %windir%\Prefetch
 md %windir%\Prefetch
-del /s /f /q %windir%\system32\dllcache*.*
-rd /s /q %windir%\system32\dllcache
-md %windir%\system32\dllcache
+del /s /f /q %windir%\System32\dllcache*.*
+rd /s /q %windir%\System32\dllcache
+md %windir%\System32\dllcache
 del /s /f /q “%SysteDrive%\Temp”*.*
 rd /s /q “%SysteDrive%\Temp”
 md “%SysteDrive%\Temp”
