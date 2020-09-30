@@ -35,14 +35,14 @@ cacls C:\Windows.old*.* /T /grant administrators:F
 pause
 rmdir /S /Q C:\Windows.old\
 echo.
-attrib -h -r -s %windir%\System32\catroot2
-attrib -h -r -s %windir%\System32\catroot2.
+attrib -h -r -s %windir%\System32\Catroot2
+attrib -h -r -s %windir%\System32\Catroot2.
 net stop wuauserv
 net stop cryptSvc
 net stop bits
 net stop msiserver
 Ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
-Ren C:\Windows\System32\catroot2 Catroot2.old
+Ren C:\Windows\System32\Catroot2 Catroot2.old
 ren “%ALLUSERSPROFILE%application dataMicrosoftNetworkdownloader” downloader.old
 net start wuauserv
 net start cryptSvc
