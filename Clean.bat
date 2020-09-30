@@ -35,8 +35,8 @@ cacls C:\Windows.old*.* /T /grant administrators:F
 pause
 rmdir /S /Q C:\Windows.old\
 echo.
-attrib -h -r -s %windir%system32\catroot2
-attrib -h -r -s %windir%system32\catroot2.
+attrib -h -r -s %windir%\system32\catroot2
+attrib -h -r -s %windir%\system32\catroot2.
 net stop wuauserv
 net stop cryptSvc
 net stop bits
